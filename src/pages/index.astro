@@ -1,0 +1,52 @@
+---
+import Layout from "@/layouts/Layout.astro"
+
+import AboutMe from "@/components/AboutMe.astro"
+import Briefcase from "@/components/icons/Briefcase.astro"
+import CodeIcon from "@/components/icons/Code.astro"
+import Experience from "@/components/Experience.astro"
+import ProfileCheck from "@/components/icons/ProfileCheck.astro"
+import Projects from "@/components/Projects.astro"
+import SectionContainer from "@/components/SectionContainer.astro"
+import Hero from "@/components/Hero.astro"
+---
+
+<Layout
+  title="Hector Zerrillo"
+  description="Desarrollador Web y Creador de Contenido. Especializado en crear aplicaciones únicas."
+>
+  <main class="px-4">
+    <SectionContainer class="py-16 md:py-36">
+      <Hero>
+      </slot>
+    </Hero>
+    </SectionContainer>
+
+    <div class="space-y-24">
+    <SectionContainer id="experiencia">
+      <h2 class="flex items-center mb-10 text-3xl font-bold gap-x-3 text-black dark:text-white" style="color: black; -webkit-text-stroke: 1px white; -webkit-text-fill-color: black; letter-spacing: 1px;">
+        <Briefcase class="size-8" color="#c2c2c2" />
+        Experience
+      </h2>
+      <Experience />
+    </SectionContainer>
+
+    <SectionContainer id="proyectos">
+      <h2 class="flex items-center mb-10 font-bold text-3xl gap-x-8 text-black dark:text-white" style="color: black; -webkit-text-stroke: 1px white; -webkit-text-fill-color: black;letter-spacing: 1px; ">
+
+        <CodeIcon class="size-7" color="#c2c2c2"/>
+        Proyects
+      </h2>
+      <Projects />
+    </SectionContainer>
+
+    <SectionContainer id="sobre-mi">
+      <h2 class="flex items-center mb-10 text-3xl font-bold gap-x-8 text-black dark:text-white" style="color: black; -webkit-text-stroke: 1px white; -webkit-text-fill-color: black;letter-spacing: 1px;">
+        <ProfileCheck class="size-8" color="#c2c2c2"/>
+        Aboute me
+      </h2>
+      <AboutMe />
+    </SectionContainer>
+  </div>
+  </main>
+</Layout>
