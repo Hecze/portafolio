@@ -8,6 +8,9 @@ import Node from "./icons/NodeJs.astro";
 import Mongo from "./icons/Mongo.astro";
 import Electron from "./icons/Electron.astro";
 import Huawei from "./icons/Huawei.astro";
+import Google from "./icons/Google.astro";
+import Anthropic from "./icons/Anthropic.astro";
+import Openai from "./icons/Openai.astro";
 
 
 import Link from "./icons/Link.astro";
@@ -16,48 +19,85 @@ import LinkButton from "./LinkButton.astro";
 const TAGS = {
   NEXT: {
     name: "Next.js",
-    class: "bg-black text-white",
+    class: "bg-black text-white px-2",
     icon: NextJS,
   },
   TAILWIND: {
     name: "Tailwind CSS",
-    class: "bg-[#003159] text-white",
+    class: "bg-[#003159] text-white px-2 ",
     icon: Tailwind,
   },
   ELECTRON: {
     name: "Electron",
-    class: "bg-black text-white",
+    class: "bg-black text-white px-2",
     icon: Electron,
   },
   HUAWEI: {
     name: "Huawei Cloud",
-    class: "bg-black text-white",
+    class: "bg-gray-50 text-black px-2",
     icon: Huawei,
+  },
+  GOOGLE: {
+    name: "Google Cloud",
+    class: "bg-gray-50 text-gray-900 px-2",
+    icon: Google,
+  },
+  ANTHROPIC: {
+    name: "Anthropic",
+    class: "bg-gray-50 text-black px-2",
+    icon: Anthropic,
+  },
+  OPENAI: {
+    name: "OpenAI",
+    class: "bg-gray-50 text-black px-2",
+    icon: Openai,
   },
   C: {
     name: "C Plus Plus",
-    class: "bg-[#00599c] text-white", 
+    class: "bg-[#00599c] text-white px-2", 
     icon: C, 
   },
   REACT: {
     name: "React.js",
-    class: "bg-[#003159] text-white",
+    class: "bg-[#003159] text-white px-2",
     icon: React, 
   },
   NODE: {
     name: "Node.js",
-    class: "bg-[#0e4235] text-white", // Cambié la clase para representar Mongo DB
+    class: "bg-[#0e4235] text-white px-2", // Cambié la clase para representar Mongo DB
     icon: Node, // Puedes cambiarlo por el ícono correspondiente a Node.js si lo tienes
   },
   MONGO: {
     name: "Mongo DB",
-    class: "bg-[#0e4235] text-white", // Cambié la clase para representar Mongo DB
+    class: "bg-[#0e4235] text-white px-2", // Cambié la clase para representar Mongo DB
     icon: Mongo, // Puedes cambiarlo por el ícono correspondiente a Mongo DB si lo tienes
   },
 };
 
 const PROJECTS = [
+
 {
+    title: "Doubleclics - IT operations automation",
+    description:
+      "The official website of Doubleclics. The website offers official translation into more than four languages, a contact section, a payment gateway, and a customer service chatbot powered by GPT-4.",
+    
+    link: "https://doubleclics.com/",
+    image: "/projects/doubleclics.webp",
+    github: "https://github.com/Hecze/doubleclics",
+    tags: [TAGS.REACT, TAGS.NEXT, TAGS.TAILWIND ,TAGS.NODE, TAGS.OPENAI],
+  },
+
+  {
+    title: "Dandelion - Graph-based file grouping system.",
+    description:
+      "Next-gen graph-based file manager developed in collaboration with Huawei.",
+    link: "https://grafosoma.vercel.app/",
+    github: "https://github.com/orgs/grep-fisi/repositories",
+    image: "/projects/dandelion.webp",
+    tags: [TAGS.HUAWEI,TAGS.ELECTRON, TAGS.REACT, TAGS.TAILWIND],
+  },
+
+  {
     title: "Fisidevs - Software Academy.",
     description:
       "The official website of Fididevs. Non-profit academic community empowering university students' talent",
@@ -65,44 +105,6 @@ const PROJECTS = [
     github: "https://github.com/Hecze/fisidevs",
     image: "/projects/fisidevs.webp",
     tags: [TAGS.REACT, TAGS.NEXT, TAGS.TAILWIND],
-  },
-{
-    title: "Doubleclics - IT operations automation",
-    description:
-      "The official website of Doubleclics. Whose mission is to provide you with the necessary tools to keep your company competitive and growing.",
-    
-    link: "https://doubleclics.com/",
-    image: "/projects/doubleclics.webp",
-    github: "https://github.com/Hecze/doubleclics",
-    tags: [TAGS.REACT, TAGS.NEXT, TAGS.TAILWIND ,TAGS.NODE],
-  },
-  {
-    title: "WhatsApp Chatbots - Simplify shipping, amplify productivity.",
-    description:
-      "Development of AI chatbots to automate real estate, mining, stock market, accounting, logistics, travel reservations, and image processing.",
-   
-    image: "/projects/chatbots.webp",
-    tags: [TAGS.REACT, TAGS.NODE],
-    github: "https://github.com/search?q=owner%3AHecze+bot&type=repositories",
-  },
-  /*
-  {
-    title: "Flitgo - Simplify shipping, amplify productivity.",
-    description:
-      "Transform e-commerce logistics with Flitgo: Automated multi-stop delivery route optimizer. You can add your deliveries directly from the application, import them from Excel, or from your own website.",
-   
-    image: "/projects/flitgo.webp",
-    tags: [TAGS.REACT, TAGS.NODE],
-  },
-  */
-  {
-    title: "Dandelion - Graph-based file grouping system.",
-    description:
-      "When clicking on a file, the environment transforms to visually indicate which are the other files with greater to lesser similarit",
-    link: "https://grafosoma.vercel.app/",
-    github: "https://github.com/orgs/grep-fisi/repositories",
-    image: "/projects/dandelion.webp",
-    tags: [TAGS.HUAWEI,TAGS.ELECTRON, TAGS.REACT, TAGS.TAILWIND],
   },
   {
     title: "Eneisoft - Play, compete, and win.",
@@ -113,6 +115,17 @@ const PROJECTS = [
     image: "/projects/eneisoft.webp",
     tags: [TAGS.REACT, TAGS.NEXT, TAGS.TAILWIND],
   },
+
+  {
+    title: "Anecdotes - Anonymous storyteller network",
+    description:
+      "The project encompasses the creation of an account system that includes registration and login functions, along with the integration of interactive features through Redux to optimize the user experience.",
+    link: "https://hecze.github.io/Anecdotes/",
+    github: "https://github.com/Hecze/Anecdotes",
+    image: "/projects/anecdotes.webp",
+    tags: [TAGS.REACT, TAGS.NODE, TAGS.MONGO],
+  },
+  
   {
     title: "Genética Cuyística - Genetic modeling in Cavia porcellus",
     description:
@@ -123,15 +136,6 @@ const PROJECTS = [
     tags: [TAGS.REACT, TAGS.NEXT, TAGS.TAILWIND],
   },
   {
-    title: "Anecdotes - Anonymous storyteller network",
-    description:
-      "The project encompasses the creation of an account system that includes registration and login functions, along with the integration of interactive features through Redux to optimize the user experience.",
-    link: "https://hecze.github.io/Anecdotes/",
-    github: "https://github.com/Hecze/Anecdotes",
-    image: "/projects/anecdotes.webp",
-    tags: [TAGS.REACT, TAGS.NODE, TAGS.MONGO],
-  },
-  {
     title: "Byte - Your beast robotic friend",
     description:
       "Multifunctional robotic dog for recreational, educational, practical, and other purposes.",
@@ -139,6 +143,15 @@ const PROJECTS = [
     github: "https://github.com/Hecze/Byte-el-perrobot",
     image: "/projects/byte.webp",
     tags: [TAGS.C],
+  },
+  {
+    title: "WhatsApp Chatbots - Simplify interaction, amplify productivity.",
+    description:
+      "Development of +10 AI chatbots to automate real estate, mining, stock market, accounting, logistics, travel reservations, and image processing. ",
+   
+    image: "/projects/chatbots.webp",
+    tags: [TAGS.NODE, TAGS.GOOGLE, TAGS.ANTHROPIC, TAGS.OPENAI],
+    github: "https://github.com/search?q=owner%3AHecze+bot&type=repositories",
   },
 ];
 ---
