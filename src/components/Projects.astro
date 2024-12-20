@@ -86,26 +86,7 @@ const TAGS = {
 };
 
 const PROJECTS = [
-  {
-    title: "Doubleclics - IT operations automation",
-    description:
-      "The official website of Doubleclics. The website offers official translation into more than four languages, a contact section, a payment gateway, and a customer service chatbot powered by GPT-4.",
 
-    link: "https://doubleclics.com/",
-    image: "/projects/doubleclics.webp",
-    github: "https://github.com/Hecze/doubleclics",
-    tags: [TAGS.REACT, TAGS.NEXT, TAGS.TAILWIND, TAGS.OPENAI],
-  },
-  {
-    title: "Médula - Software Factory",
-    description:
-      "The official website of Médula. Non-profit research team.  dedicated to the development of generative artificial intelligence, robotics and genetics.",
-
-    link: "https://www.medula.tech/",
-    image: "/projects/medula.webp",
-    github: "https://github.com/Hecze/medula",
-    tags: [TAGS.REACT, TAGS.NEXT, TAGS.TAILWIND, TAGS.OPENAI],
-  },
   {
     title: "Detective GPT - Multi-Agent Architecture",
     description:
@@ -114,7 +95,7 @@ const PROJECTS = [
     link: "https://criminologa-procedural.vercel.app/",
     image: "/projects/detective-gpt.webp",
     github: "https://github.com/Hecze/DetectiveGPT",
-    tags: [TAGS.AWS, TAGS.OPENAI, TAGS.ANTHROPIC],
+    tags: [TAGS.AWS, TAGS.NEXT, TAGS.ANTHROPIC],
   },
   {
     title: "Machine Learning Project - Movie Recomendation System",
@@ -124,7 +105,7 @@ const PROJECTS = [
     link: "https://mra-ten.vercel.app/",
     image: "/projects/mra.webp",
     github: "https://github.com/Hecze/movie-recommendation-algorithm",
-    tags: [TAGS.REACT, TAGS.NEXT, TAGS.TAILWIND],
+    tags: [TAGS.AWS],
   },
   {
     title: "Flashcards Generator - AI-powered flashcards",
@@ -134,7 +115,7 @@ const PROJECTS = [
     link: "https://fashcards-generator.vercel.app/",
     image: "/projects/flashcards.webp",
     github: "https://github.com/Hecze/FashcardsGenerator",
-    tags: [TAGS.AWS, TAGS.LANGCHAIN, TAGS.OPENAI],
+    tags: [TAGS.AWS, TAGS.LANGCHAIN],
   },
 
   {
@@ -145,35 +126,6 @@ const PROJECTS = [
     github: "https://github.com/orgs/grep-fisi/repositories",
     image: "/projects/dandelion.webp",
     tags: [TAGS.HUAWEI, TAGS.ELECTRON, TAGS.REACT, TAGS.TAILWIND],
-  },
-
-  {
-    title: "Fisidevs - Software Academy.",
-    description:
-      "The official website of Fididevs. Non-profit academic community empowering university students' talent",
-    link: "https://fisidevs.vercel.app/",
-    github: "https://github.com/Hecze/fisidevs",
-    image: "/projects/fisidevs.webp",
-    tags: [TAGS.REACT, TAGS.NEXT, TAGS.TAILWIND],
-  },
-  {
-    title: "Eneisoft - Play, compete, and win.",
-    description:
-      "The official website for the national software engineers' meeting. The site's high quality attracted investors, who generously donated scholarships, ensuring substantial prizes for participants and enriching conferences during the event.",
-    link: "https://eneisoft.org/",
-    github: "https://github.com/Hecze/eneisoft",
-    image: "/projects/eneisoft.webp",
-    tags: [TAGS.REACT, TAGS.NEXT, TAGS.TAILWIND],
-  },
-
-  {
-    title: "Anecdotes - Anonymous storyteller network",
-    description:
-      "The project encompasses the creation of an account system that includes registration and login functions, along with the integration of interactive features through Redux to optimize the user experience.",
-    link: "https://hecze.github.io/Anecdotes/",
-    github: "https://github.com/Hecze/Anecdotes",
-    image: "/projects/anecdotes.webp",
-    tags: [TAGS.REACT, TAGS.NODE, TAGS.MONGO],
   },
 
   {
@@ -203,6 +155,54 @@ const PROJECTS = [
     tags: [TAGS.NODE, TAGS.GOOGLE, TAGS.ANTHROPIC, TAGS.OPENAI],
     github: "https://github.com/search?q=owner%3AHecze+bot&type=repositories",
   },
+  {
+    title: "Fisidevs - Software Academy.",
+    description:
+      "The official website of Fididevs. Non-profit academic community empowering university students' talent",
+    link: "https://fisidevs.vercel.app/",
+    github: "https://github.com/Hecze/fisidevs",
+    image: "/projects/fisidevs.webp",
+    tags: [TAGS.REACT, TAGS.NEXT, TAGS.TAILWIND],
+  },
+  {
+    title: "Eneisoft - Play, compete, and win.",
+    description:
+      "The official website for the national software engineers' meeting. The site's high quality attracted investors, who generously donated scholarships, ensuring substantial prizes for participants and enriching conferences during the event.",
+    link: "https://eneisoft.org/",
+    github: "https://github.com/Hecze/eneisoft",
+    image: "/projects/eneisoft.webp",
+    tags: [TAGS.REACT, TAGS.NEXT, TAGS.TAILWIND],
+  },
+  {
+    title: "Doubleclics - IT operations automation",
+    description:
+      "The official website of Doubleclics. The website offers official translation into more than four languages, a contact section, a payment gateway, and a customer service chatbot powered by GPT-4.",
+
+    link: "https://doubleclics.com/",
+    image: "/projects/doubleclics.webp",
+    github: "https://github.com/Hecze/doubleclics",
+    tags: [TAGS.REACT, TAGS.NEXT, TAGS.TAILWIND, TAGS.OPENAI],
+  },
+  {
+    title: "Médula - Software Factory",
+    description:
+      "The official website of Médula. Non-profit research team.  dedicated to the development of generative artificial intelligence, robotics and genetics.",
+
+    link: "https://www.medula.tech/",
+    image: "/projects/medula.webp",
+    github: "https://github.com/Hecze/medula",
+    tags: [TAGS.REACT, TAGS.NEXT, TAGS.TAILWIND, TAGS.OPENAI],
+  },
+  {
+    title: "Anecdotes - Anonymous storyteller network",
+    description:
+      "The project encompasses the creation of an account system that includes registration and login functions, along with the integration of interactive features through Redux to optimize the user experience.",
+    link: "https://hecze.github.io/Anecdotes/",
+    github: "https://github.com/Hecze/Anecdotes",
+    image: "/projects/anecdotes.webp",
+    tags: [TAGS.REACT, TAGS.NODE, TAGS.MONGO],
+  },
+
 ];
 ---
 
